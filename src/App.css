@@ -13,6 +13,18 @@
   }
 }
 
+input:focus, textarea {
+  outline: none !important;
+}
+
+textarea, textarea::placeholder {
+  text-align: center; 
+}
+
+textarea:focus {
+  text-align: left; 
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
