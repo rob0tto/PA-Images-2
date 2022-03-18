@@ -32,14 +32,14 @@ function App() {
   }, [paNum, button, updateCalled]);
 
   return (
-    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '100vh', flexDirection: 'column', backgroundColor: '#2E2C2D' }} className="App">
-      <h1 style={{ color: '#FFFD54' }}>Psychedelics Anonymous Genesis</h1>
+    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '100vh', flexDirection: 'column', backgroundColor: '#000000' }} className="App">
+      <h1 style={{ color: '#FFFFFF', fontWeight: 900 }}>PA Genesis Downloader</h1>
       <form onSubmit={updateURL}>
         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}>
-          <input type="text" name="number" placeholder="PA Number" style={{ fontSize: '24px', textAlign: 'center' }} />
+          <input type="text" name="number" placeholder="PA Token #" style={{ width: '300px', fontSize: '16px', textAlign: 'center' }} />
           <div style={{ display: 'flex' }}>
-            <button onClick={() => (setButton(1))} style={{ cursor: 'pointer', marginTop: '24px', backgroundColor: '#4A6CF1', borderRadius: '24px', border: 'none', width: '120px', height: '40px', color: 'white', fontWeight: 'bold', fontSize: '16px', marginRight: '12px' }}>Open Image</button>
-            <button onClick={() => (setButton(2))} style={{ cursor: 'pointer', marginTop: '24px', backgroundColor: '#4A6CF1', borderRadius: '24px', border: 'none', width: '120px', height: '40px', color: 'white', fontWeight: 'bold', fontSize: '16px', marginLeft: '12px' }}>Download Image</button>
+            <button onClick={() => (setButton(1))} style={{ cursor: 'pointer', marginTop: '24px', backgroundColor: '#FFFD54', borderRadius: '24px', border: 'none', width: '150px', height: '40px', color: 'black', fontWeight: 'bold', fontSize: '16px', marginRight: '12px' }}>Open Image</button>
+            <button onClick={() => (setButton(2))} style={{ cursor: 'pointer', marginTop: '24px', backgroundColor: '#486cfc', borderRadius: '24px', border: 'none', width: '150px', height: '40px', color: 'black', fontWeight: 'bold', fontSize: '16px', marginLeft: '12px' }}>Download Image</button>
           </div>
         </div>
       </form>
